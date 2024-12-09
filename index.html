@@ -6,6 +6,11 @@
     <title>Unity WebGL Player | CampusRun</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+<script type="text/javascript">
+    function CloseWebPage() {
+                window.close();
+    }
+</script>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -67,6 +72,8 @@
         productName: "CampusRun",
         productVersion: "0.1.0",
         showBanner: unityShowBanner,
+	loaderUrl: buildUrl + "/Final_project_WebBuild.loader.js",
+	useArrayBuffer: true
       };
 
       // By default, Unity keeps WebGL canvas render target size matched with
